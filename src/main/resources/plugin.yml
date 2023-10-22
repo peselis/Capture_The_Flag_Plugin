@@ -1,0 +1,4 @@
+name: CTF
+version: '${project.version}'
+main: me.spacety.ctf.Main
+api-version: '1.19'
