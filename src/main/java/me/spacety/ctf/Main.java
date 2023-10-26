@@ -10,6 +10,7 @@ public final class Main extends JavaPlugin {
         instance = this;
         ManaHandler manaHandler = new ManaHandler();
         getServer().getPluginManager().registerEvents(new PlayerEvents(), this);
+        getCommand("ctf").setExecutor(new CTFCommandHandler(this));
     }
 
     @Override
@@ -20,5 +21,7 @@ public final class Main extends JavaPlugin {
     public static Main getInstance() {
         return instance;
     }
+
+
 
 }
